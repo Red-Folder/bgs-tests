@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="com.red_folder.phonegap.plugin.backgroundservice.tests"
+        version="0.1">
+
+    <name>Background Service Plugin - Tests</name>
+
+    <description>
+        Tests for the Background Service.  Used for automated testing
+    </description>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+	<!-- Load in the core background service -->
+	<dependency id="com.red_folder.phonegap.plugin.backgroundservice.sample" url="https://github.com/Red-Folder/bgs-sample.git"/>
+
+    <!-- android -->
+    <platform name="android">
+
+		<asset src="www/PluginSpecRunner.html" target="PluginSpecRunner.html" />
+
+		<asset src="www/jasmine_rest_reporter.js" target="jasmine_rest_reporter.js" />
+		<asset src="www/jquery.ajaxQueue.js" target="jquery.ajaxQueue.js" />
+		<asset src="www/jquery-1.10.2.min.js" target="jquery-1.10.2.min.js" />
+
+		<asset src="www/spec/PluginSpec.js" target="spec/PluginSpec.js" />
+		<asset src="www/spec/register_deregister_for_update.js" target="spec/register_deregister_for_update.js" />
+		<asset src="www/spec/spec_common.js" target="spec/spec_common.js" />
+		<asset src="www/spec/spec_config.js" target="spec/spec_config.js" />
+
+		<asset src="www/lib/jasmine-1.3.1/jasmine.css" target="lib/jasmine-1.3.1/jasmine.css" />
+		<asset src="www/lib/jasmine-1.3.1/jasmine.js" target="lib/jasmine-1.3.1/jasmine.js" />
+		<asset src="www/lib/jasmine-1.3.1/jasmine-html.js" target="lib/jasmine-1.3.1/jasmine-html.js" />
+		<asset src="www/lib/jasmine-1.3.1/MIT.LICENSE" target="lib/jasmine-1.3.1/MIT.LICENSE" />
+		
+    </platform>
+	
+</plugin>
